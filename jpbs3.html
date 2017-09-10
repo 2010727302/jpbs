@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function myFunction()
+{
+try
+{
+var x=document.getElementById("demo").value;
+if(x=="")    throw "诶呀呀，内容不能为空哦";
+}
+catch(err)
+{
+var y=document.getElementById("mess");
+y.innerHTML=  err ;
+}
+}
+</script>
+弹幕：<input id="demo" type="text">
+<button type="button" onclick="myFunction()">发送弹幕嘿嘿嘿</button>
+<p id="mess">   </p>
+
+</body>
+</html>
